@@ -4,51 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECLAT Barbería - Suscripciones</title>
-    <!-- Enlace a Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Agrega la CDN de Heroicons para usar los iconos -->
+    <script src="https://cdn.jsdelivr.net/npm/heroicons"></script>
 </head>
 <body class="bg-gray-200 font-sans leading-normal tracking-normal">
     <header class="bg-gray-800 text-white p-5 flex justify-between items-center w-full">
         <img src="logo-eclat.png" alt="Logo ECLAT" class="h-10">
-        <div class="flex items-center">
-            <h1 class="text-lg font-semibold">ECLAT</h1>
-            <a href="login.html" class="ml-4 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition duration-300">
-                Iniciar sesión
-            </a>
-        </div>
+        <h1 class="text-lg font-semibold">ECLAT</h1>
     </header>
-    <div class="text-center p-5">
-        <p class="text-gray-700 text-lg">Descubre la diferencia de ECLAT con nuestros planes de suscripción. Cuida tu estilo con los expertos en barbería.</p>
-    </div>
     <div class="flex justify-center flex-wrap p-5">
+        <!-- Plan Mensual -->
         <div class="m-2 bg-white rounded-lg shadow-lg p-5 max-w-sm w-full">
             <h2 class="text-lg font-bold">Mensual</h2>
             <p class="text-green-500 text-xl">$9.99</p>
             <p>Perfecto para mantenimiento regular de tu estilo.</p>
+            <ul class="list-disc pl-5 mt-4">
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de tijeras -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121l-9.9 9.9m13.657-5.657l2.828-2.828a4 4 0 00-5.657-5.657l-2.829 2.829m5.657 5.657L14.12 10.49m0 0l-4.242 4.243m4.243-4.242L9.88 14.12m0 0l-6.364-6.364a9 9 0 113.515 3.514l6.364 6.364z"/>
+                    </svg>
+                    Corte básico</li>
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de lavado -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l9-5-9-5-9 5 9 5zm0 0v-5m0 5V10m0 10l-9-5 9-5"/>
+                    </svg>
+                    Lavado</li>
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de barba -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l1.303 2.917c.362.81 1.135 1.627 1.986 2.005 1.95.866 4.663-.061 6.044-2.06 1.38 2 4.093 2.927 6.043 2.06.85-.378 1.623-1.195 1.985-2.005L21 7"/>
+                    </svg>
+                    Estilizado básico</li>
+            </ul>
             <a href="registro.html" class="block w-full bg-green-500 hover:bg-green-600 text-white mt-4 py-2 rounded text-center transition duration-300">
                 Suscribirse
             </a>
         </div>
+        <!-- Plan Trimestral -->
         <div class="m-2 bg-white rounded-lg shadow-lg p-5 max-w-sm w-full">
             <h2 class="text-lg font-bold">Trimestral</h2>
             <p class="text-green-500 text-xl">$26.97</p>
             <p>Ideal para cambios de estilo a lo largo del año.</p>
+            <ul class="list-disc pl-5 mt-4">
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de tijeras -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121l-9.9 9.9m13.657-5.657l2.828-2.828a4 4 0 00-5.657-5.657l-2.829 2.829m5.657 5.657L14.12 10.49m0 0l-4.242 4.243m4.243-4.242L9.88 14.12m0 0l-6.364-6.364a9 9 0 113.515 3.514l6.364 6.364z"/>
+                    </svg>
+                    Cortes ilimitados</li>
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de lavado -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l9-5-9-5-9 5 9 5zm0 0v-5m0 5V10m0 10l-9-5 9-5"/>
+                    </svg>
+                    Tratamientos de barba</li>
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de barba -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l1.303 2.917c.362.81 1.135 1.627 1.986 2.005 1.95.866 4.663-.061 6.044-2.06 1.38 2 4.093 2.927 6.043 2.06.85-.378 1.623-1.195 1.985-2.005L21 7"/>
+                    </svg>
+                    Productos con descuento</li>
+            </ul>
             <a href="registro.html" class="block w-full bg-green-500 hover:bg-green-600 text-white mt-4 py-2 rounded text-center transition duration-300">
                 Suscribirse
             </a>
         </div>
+        <!-- Plan Semestral -->
         <div class="m-2 bg-white rounded-lg shadow-lg p-5 max-w-sm w-full">
             <h2 class="text-lg font-bold">Semestral</h2>
             <p class="text-green-500 text-xl">$47.94</p>
             <p>Para quienes buscan versatilidad y cuidado continuo.</p>
+            <ul class="list-disc pl-5 mt-4">
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de tijeras -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121l-9.9 9.9m13.657-5.657l2.828-2.828a4 4 0 00-5.657-5.657l-2.829 2.829m5.657 5.657L14.12 10.49m0 0l-4.242 4.243m4.243-4.242L9.88 14.12m0 0l-6.364-6.364a9 9 0 113.515 3.514l6.364 6.364z"/>
+                    </svg>
+                    Cortes y retoques ilimitados</li>
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de lavado -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l9-5-9-5-9 5 9 5zm0 0v-5m0 5V10m0 10l-9-5 9-5"/>
+                    </svg>
+                    Coloración y tratamientos avanzados</li>
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de barba -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l1.303 2.917c.362.81 1.135 1.627 1.986 2.005 1.95.866 4.663-.061 6.044-2.06 1.38 2 4.093 2.927 6.043 2.06.85-.378 1.623-1.195 1.985-2.005L21 7"/>
+                    </svg>
+                    10% de descuento en todos los productos</li>
+            </ul>
             <a href="registro.html" class="block w-full bg-green-500 hover:bg-green-600 text-white mt-4 py-2 rounded text-center transition duration-300">
                 Suscribirse
             </a>
         </div>
+        <!-- Plan Anual -->
         <div class="m-2 bg-white rounded-lg shadow-lg p-5 max-w-sm w-full">
             <h2 class="text-lg font-bold">Anual</h2>
             <p class="text-green-500 text-xl">$83.88</p>
             <p>El plan completo para el cuidado total de tu imagen.</p>
+            <ul class="list-disc pl-5 mt-4">
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de tijeras -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121l-9.9 9.9m13.657-5.657l2.828-2.828a4 4 0 00-5.657-5.657l-2.829 2.829m5.657 5.657L14.12 10.49m0 0l-4.242 4.243m4.243-4.242L9.88 14.12m0 0l-6.364-6.364a9 9 0 113.515 3.514l6.364 6.364z"/>
+                    </svg>
+                    Servicios VIP ilimitados</li>
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de lavado -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l9-5-9-5-9 5 9 5zm0 0v-5m0 5V10m0 10l-9-5 9-5"/>
+                    </svg>
+                    Acceso a eventos exclusivos</li>
+                <li class="flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icono de barba -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l1.303 2.917c.362.81 1.135 1.627 1.986 2.005 1.95.866 4.663-.061 6.044-2.06 1.38 2 4.093 2.927 6.043 2.06.85-.378 1.623-1.195 1.985-2.005L21 7"/>
+                    </svg>
+                    Prioridad en reservas y nuevos lanzamientos</li>
+            </ul>
             <a href="registro.html" class="block w-full bg-green-500 hover:bg-green-600 text-white mt-4 py-2 rounded text-center transition duration-300">
                 Suscribirse
             </a>
